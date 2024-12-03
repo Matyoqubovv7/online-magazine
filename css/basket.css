@@ -1,0 +1,47 @@
+.basket-product{
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgb(221, 221, 221);
+    height: 600px;
+    padding-top: 50px;
+    border-radius: 10px;
+    
+}
+.product-about{
+    height: 100%;
+    margin: 0 auto;
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 10px;
+    gap: 100px;  
+    margin-top: 15px;   
+}
+
+.product-about-img {
+    width: 10%;
+    height: 3%;
+    aspect-ratio: 4/4;
+    object-fit: contain;
+}
+.product-about p:nth-child(5){
+    color: red;
+}
+
+.product-delete{
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    height: 40px;           
+    width:  60px;  
+    border: none;
+    border-radius: 7px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding-right: 4px;
+    
+}
+
