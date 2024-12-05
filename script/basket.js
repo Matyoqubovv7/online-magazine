@@ -1,36 +1,36 @@
 let list = document.querySelector(".list");
-let basket_json = {
-  1: {
+let basket_json = [
+{
     img: "ice-cream/01.png",
     name: "Zolotoy",
     price: 15000,
     count: 3,
     "total price": 45000,
   },
-  2: {
+{
     img: "chocolate/04.png",
     name: "Kit Kat",
     price: 12000,
     count: 1,
     "total price": 12000,
   },
-  3: {
+{
     img: "drink/03.png",
     name: "Coca-Cola",
     price: 14000,
     count: 3,
     "total price": 42000,
   },
-  4: {
+{
     img: "chocolate/13.png",
     name: "Alpen Gold",
     price: 13000,
     count: 3,
     "total price": 39000,
   },
-};
+]
 
-for (let i = 1; i <= 4; i++) {
+for (let i = 0; i < basket_json.length; i++) {
   let productAbout = document.createElement("div");
   productAbout.classList.add("product-about");
   productAbout.innerHTML = `
