@@ -64,7 +64,7 @@
     line-height: 33px;
     border-radius: 5px;
     cursor: pointer;
-    position: relative;
+    position: fixed;
     top: 39px;
     left: 10px;
     background-color: whitesmoke;
