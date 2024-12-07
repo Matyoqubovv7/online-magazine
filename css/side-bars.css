@@ -3,13 +3,13 @@
     position: absolute;
     top: 7%;
     width: 200px;
+
     height: 97%;
     z-index: 1;
     box-shadow: 0px 0px 10px rgba(47, 46, 46, 0.782),
     0px 0px 10px #2f2e2ec7;
-    display:none;
+    transition: all 1s;
     transform: translateX(-250px);
-    transition: transform 1s ease; 
 }
 
 .side-bar h1 {
@@ -65,7 +65,7 @@
     border-radius: 5px;
     cursor: pointer;
     position: fixed;
-    top: 39px;
+    top: 5px;
     left: 10px;
     background-color: whitesmoke;
     color: #701d9f;

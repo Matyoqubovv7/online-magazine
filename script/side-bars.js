@@ -3,9 +3,10 @@ let barsIcon= document.querySelector('.icon-b')
 let xIcon= document.querySelector('.icon-x')
 
 barsIcon.addEventListener('click', () => {
-    sideBars.style.display = 'block'
+
     sideBars.style.transform = 'translateX(0px)'
 });
 xIcon.addEventListener('click', () => {
-    sideBars.style.display = 'none'
+    sideBars.style.transform = 'translateX(-250px)'
+
 })
