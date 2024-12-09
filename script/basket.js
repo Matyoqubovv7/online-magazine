@@ -45,18 +45,27 @@ for (let i = 0; i < basket_json.length; i++) {
 
   list.appendChild(productAbout);
 }
-let minus = document.querySelectorAll(".minus");
-minus.forEach((n, index) => {
-  n.onclick = () => {
-    let item = basket_json[index + 1];
-    if (item["count"] > 1) {
-      item["count"] -= 1;
-      item["total price"] -= item["price"];
-      let count_list = document.querySelectorAll(".basket-count");
-      count_list[index].textContent = `count: ${item["count"]}`;
-      let total_price = document.querySelectorAll(".basket-total-price");
-      total_price[index].textContent = `total price: ${item["total price"]}`;
+let minus = document.querySelectorAll('.minus')
+minus.forEach((n,index)=>{
+    n.onclick=()=>{
+        let item = basket_json[index]
+        if (item['count'] > 1) {
+            item['count'] -= 1;
+            item['total price'] -= item['price'];
+            let count_list = document.querySelectorAll('.basket-count')
+            count_list[index].textContent = `count: ${item['count']}`;
+            let total_price = document.querySelectorAll('.basket-total-price')
+            total_price[index].textContent = `total price: ${item['total price']}`;
+        }
+         list[index].style.display='none'
+        
     }
-  };
-});
+})
 
+let list2 = document.querySelectorAll('.product-about')
+let remove = document.querySelectorAll('.product-delete')
+remove.forEach((n,index)=>{
+    n.onclick=()=>{
+        list[index].style.display='none'
+    }
+})
